@@ -1,0 +1,123 @@
+/*
+*
+* Mixins
+* --------------------------------------------------
+*/
+@mixin button-primary {
+  font-family: Mukta-SemiBold;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 13px 20px;
+  color: $white;
+  background-color: $orange-base;
+  transition: all 0.2s;
+  &:hover,
+  &:active,
+  &:focus{
+    color: $white;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-color: $orange-second;
+  }
+}
+@mixin button-invert {
+  font-family: 'GothamPro-Bold';
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 11px 24px;
+  color: $white;
+  border: 1px solid $white;
+  background-color: $white-ligten;
+  transition: all 0.2s;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+    transition: all 0.2s;
+    background-color: $white-ligten-hover;
+  }
+}
+@mixin button-secondary {
+  font-family: 'GothamPro';
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 11px 24px;
+  color: $black;
+  border: 1px solid $orange-base;
+  background-color: $orange-base-lighten;
+  transition: all 0.2s;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $orange-base;
+    transition: all 0.2s;
+    background-color: $orange-base-lighten-hover;
+  }
+}
+@mixin button-arrow {
+  font-family: 'GothamPro-Bold';
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0;
+  color: $orange-base;
+  background-color: transparent;
+  transition: all 0.2s;
+  &:hover,
+  &:active,
+  &:focus{
+    color: $orange-second;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-color: transparent;
+  }
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+/*@mixin custom-border-before {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: $grey-border;
+    height: 1px;
+    width: 100%;
+  }
+}*/
+@mixin custom-border-after {
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: linear-gradient(90deg, rgba(252, 101, 55, 0) 23.69%, #FC6537 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    height: 1px;
+    width: 20%;
+  }
+}

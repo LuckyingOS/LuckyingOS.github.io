@@ -1,0 +1,25 @@
+/**
+* Template Style
+*
+* [Table of contents]
+
+**/
+@import "reset";
+@import "mixins/_mixins";
+// Import default color scheme
+@import "color-scheme/color-default";
+
+// Components & modules & plugins & helpers
+
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_slider";
+@import "components/_default";
+@import "components/_posts";
+@import "components/_tabs";
+@import "components/_services";
+
+@import "color-scheme/color-default";
+@import "color-scheme/typography-default";
