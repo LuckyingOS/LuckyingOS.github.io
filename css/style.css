@@ -1562,6 +1562,42 @@ ol.wsnumber1 > li::before {
   }
 }
 
+#myVideo {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.background-video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(63, 83, 109, 0.6)), to(rgba(63, 83, 109, 0.6))), -webkit-gradient(linear, left top, left bottom, color-stop(15.42%, #3F536D), color-stop(82.75%, rgba(63, 83, 109, 0.25)));
+  background: linear-gradient(0deg, rgba(63, 83, 109, 0.6), rgba(63, 83, 109, 0.6)), linear-gradient(180deg, #3F536D 15.42%, rgba(63, 83, 109, 0.25) 82.75%);
+}
+
+ol.wsnumber1.v2 > li.parent::before {
+  content: counter(wslist2);
+  /* вывод счетчика*/
+  counter-increment: wslist2;
+  /*значение счетчика увеличиваем на один */
+}
+
+.wsnumber_row {
+  counter-reset: wslist2;
+}
+
 .text-black {
   color: #00112C;
 }
@@ -1580,6 +1616,7 @@ img.full-img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .wsnumber1.v3 {
