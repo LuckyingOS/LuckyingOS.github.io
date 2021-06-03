@@ -14,14 +14,16 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/plugins.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 	</head>
 	<body>
 		<!-- Page Wrap -->
-		<div class="page-wrap home_v2">
+		<div class="page-wrap">
 			<!-- Page Header-->
-			<header class="section page-header main-menu-absolute">
+			<header class="section page-header main-menu-absolute wow flipInX">
 				<!-- Superfish menu -->
 				<div class="main-menu-wrap">
 					<nav class="navbar navbar-expand-md navbar-dark">
@@ -117,7 +119,7 @@
 			</header>
 			<main class="page-main">
 				<section class="section section-lg invert spacer-mobile" style="background-image: url(images/bg-first-section-public-sector.jpg)">
-					<div class="container-sm-first-sec">
+					<div class="container-sm-first-sec wow flipInX">
 						<div class="row">
 							<div class="col-md-8 col-sm-8">
 								<h1 class="style-h1">Public Sector</h1>
@@ -138,17 +140,17 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h2 class="style-h1 title-mr-l mb-sm-5">The needs and requirements for cyber security of
+								<h2 class="style-h1 title-mr-l mb-sm-5 wow fadeInUp">The needs and requirements for cyber security of
 									<span>public sector institutions</span>
 									are quite different than private sector companies</h2>
 							</div>
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h3 class="custom-line">conclusions</h3>
-								<p>Therefore, security of imported products and services becomes even
+								<h3 class="custom-line wow fadeInUp">conclusions</h3>
+								<p class="wow fadeInUp">Therefore, security of imported products and services becomes even
 									more important for public sector. At PRODAFT, we continuously search for vulnerabilities
 									in the most widely used products in the world and share them with relevant public institutions.
 									With these efforts, we take national security a step further and create awareness around the world.</p>
-								<p>	In today's world cyber attacks are shaped by political factors and become more unpredicted. PRODAFT
+								<p class="wow fadeInUp">	In today's world cyber attacks are shaped by political factors and become more unpredicted. PRODAFT
 									uses the Cyber Intelligence Platform GPACT, which continuously monitors cyber space of attackers,
 									to predict and stop potential attacks that is likely to take place against the public institutions.</p>
 							</div>
@@ -159,21 +161,21 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h2 class="style-h1 title-mr-l">PRODAFT <span>Public Sector</span> Solutions</h2>
-								<p class="title-mr-l mb-sm-5">You will be protected with the most updated services for public institutions at PRODAFT. We will prevent any potential cyber attacks.</p>
+								<h2 class="style-h1 title-mr-l wow fadeInUp">PRODAFT <span>Public Sector</span> Solutions</h2>
+								<p class="title-mr-l mb-sm-5 wow fadeInUp">You will be protected with the most updated services for public institutions at PRODAFT. We will prevent any potential cyber attacks.</p>
 							</div>
 							<div class="col-lg-6 col-md-12 col-sm-12">
 								<div class="row">
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
-											<div class="features-item features-orange"><img src="images/app-development.svg"><span>Code Audit</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
+											<div class="features-item features-orange wow fadeInUp"><img src="images/app-development.svg"><span>Code Audit</span></div>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
-											<div class="features-item features-orange"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
+											<div class="features-item features-orange wow fadeInUp"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
 										</div>
 									</div>
 								</div>
@@ -187,7 +189,7 @@
 			<footer class="footer">
 				<section>
 					<div class="container invert">
-						<div class="row subscribe-section custom-border">
+						<div class="row subscribe-section custom-border wow flipInX">
 							<div class="col-lg-5 col-md-12 col-xs-12 subscribe-text">
 								<h3 class="style-h3">Newsletter <span>Sign Up</span></h3>
 								<p>Spessial offers from us to your inbox weekly.</p>
@@ -205,7 +207,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="row footer-section-navigation custom-border">
+						<div class="row footer-section-navigation custom-border wow flipInX">
 							<div class="col-xs-12 col-lg-4">
 								<img class="footer-logo" src="images/footer-logo.svg">
 								<ul class="custom-info">
@@ -310,7 +312,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row wow flipInX">
 							<div class="col-xs-12 col-lg-12 copyright"><p>© Copyright 2021 - PRODAFT All rights reserved.</p></div>
 						</div>
 					</div>
@@ -324,5 +326,7 @@
 		<script src="js/script.js"></script>
 		<script src="js/vendor/slick/slick.min.js"></script>
 		<script defer src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="js/vendor/wow/wow.min.js"></script>
+		<script> new WOW().init(); </script>
 	</body>
 </html>

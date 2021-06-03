@@ -15,13 +15,14 @@
 		<link rel="stylesheet" href="css/plugins.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/animate.css">
 
 	</head>
 	<body>
 		<!-- Page Wrap -->
 		<div class="page-wrap home_v2">
 			<!-- Page Header-->
-			<header class="section page-header main-menu-absolute">
+			<header class="section page-header main-menu-absolute wow flipInX">
 				<!-- Superfish menu -->
 				<div class="main-menu-wrap">
 					<nav class="navbar navbar-expand-md navbar-dark">
@@ -117,7 +118,7 @@
 			</header>
 			<main class="page-main">
 				<section class="section section-lg invert spacer-mobile" style="background-image: url(images/bg-first-section-aviation.jpg)">
-					<div class="container-sm-first-sec">
+					<div class="container-sm-first-sec wow flipInX">
 						<div class="row">
 							<div class="col-md-8 col-sm-8">
 								<h1 class="style-h1">Aviation</h1>
@@ -137,16 +138,16 @@
 				<section class="section section-sm mt-custom-sm">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp">
 								<h2 class="style-h1 title-mr-l mb-sm-5">In recent years <span>aviation sector has been targeted by increasing number of cyber attacks,</span> in particular airlines</h2>
 							</div>
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h3 class="custom-line">conclusions</h3>
-								<p>Therefore, airlines are always on top of the list of targets during a cyber war.
+								<h3 class="custom-line wow fadeInUp">conclusions</h3>
+								<p class="wow fadeInUp">Therefore, airlines are always on top of the list of targets during a cyber war.
 									That's why, we believe that the aviation sector must be considered within a national
 									security perspective. Subcontractors and services used in this sector must closely be
 									monitored.</p>
-								<p>PRODAFT provides penetration tests performed in a wide range of softwares
+								<p class="wow fadeInUp">PRODAFT provides penetration tests performed in a wide range of softwares
 									from counter systems to automation systems. With our code audits and embedded system
 									security tests you will ensure that your institution is always ready for any cyber threats.</p>
 							</div>
@@ -156,7 +157,7 @@
 				<section class="section section-sm pt-xs-0 pt-custom-sm pb-custom-sm">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp">
 								<h2 class="style-h1 title-mr-l">PRODAFT <span>Public Aviation</span> Solutions</h2>
 								<p class="title-mr-l mb-sm-5">We constantly monitor aviation industry and provide most updated protection against cyber threats.</p>
 							</div>
@@ -164,15 +165,15 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
-											<div class="features-item features-orange"><img src="images/app-development.svg"><span>Code Audit</span></div>
-											<div class="features-item features-blue"><img src="images/cyber-security-1.svg"><span>Secure Code Development Lifecycle</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
+											<div class="features-item features-orange wow fadeInUp"><img src="images/app-development.svg"><span>Code Audit</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/cyber-security-1.svg"><span>Secure Code Development Lifecycle</span></div>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue rp-color"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
-											<div class="features-item features-orange rp-color"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
+											<div class="features-item features-blue rp-color wow fadeInUp"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
+											<div class="features-item features-orange rp-color wow fadeInUp"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
 										</div>
 									</div>
 								</div>
@@ -186,7 +187,7 @@
 			<footer class="footer">
 				<section>
 					<div class="container invert">
-						<div class="row subscribe-section custom-border">
+						<div class="row subscribe-section custom-border wow flipInX">
 							<div class="col-lg-5 col-md-12 col-xs-12 subscribe-text">
 								<h3 class="style-h3">Newsletter <span>Sign Up</span></h3>
 								<p>Spessial offers from us to your inbox weekly.</p>
@@ -204,7 +205,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="row footer-section-navigation custom-border">
+						<div class="row footer-section-navigation custom-border wow flipInX">
 							<div class="col-xs-12 col-lg-4">
 								<img class="footer-logo" src="images/footer-logo.svg">
 								<ul class="custom-info">
@@ -309,7 +310,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row wow flipInX">
 							<div class="col-xs-12 col-lg-12 copyright"><p>© Copyright 2021 - PRODAFT All rights reserved.</p></div>
 						</div>
 					</div>
@@ -323,5 +324,7 @@
 		<script src="js/script.js"></script>
 		<script src="js/vendor/slick/slick.min.js"></script>
 		<script defer src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="js/vendor/wow/wow.min.js"></script>
+		<script> new WOW().init(); </script>
 	</body>
 </html>

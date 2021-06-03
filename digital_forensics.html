@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/plugins.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 	</head>
@@ -21,7 +22,7 @@
 		<!-- Page Wrap -->
 		<div class="page-wrap home_v2">
 			<!-- Page Header-->
-			<header class="section page-header main-menu-absolute">
+			<header class="section page-header main-menu-absolute wow flipInX">
 				<!-- Superfish menu -->
 				<div class="main-menu-wrap">
 					<nav class="navbar navbar-expand-md navbar-dark">
@@ -117,7 +118,7 @@
 			</header>
 			<main class="page-main">
 				<section class="section section-lg invert spacer-mobile" style="background-image: url(images/bg-first-section-forensic.jpg)">
-					<div class="container-sm-first-sec">
+					<div class="container-sm-first-sec wow flipInX">
 						<div class="row">
 							<div class="col-md-8 col-sm-8">
 								<h1 class="style-h1">Digital Forensics</h1>
@@ -139,13 +140,13 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-5 col-md-12 col-sm-12">
-								<h2 class="style-h1 title-mr-l mb-sm-5"><span>Uncover</span> the details of an attack</h2>
+								<h2 class="style-h1 title-mr-l mb-sm-5 wow fadeInUp"><span>Uncover</span> the details of an attack</h2>
 							</div>
 							<div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12">
-								<h3 class="custom-line">main objective</h3>
-								<p>The main objective of our forensic analysis services is to uncover the details of an
+								<h3 class="custom-line wow fadeInUp">main objective</h3>
+								<p class="wow fadeInUp">The main objective of our forensic analysis services is to uncover the details of an
 									attack.</p>
-								<p>Our team's findings are recorded as evidence, in compliance with international
+								<p class="wow fadeInUp">Our team's findings are recorded as evidence, in compliance with international
 									evidence collection procedures. All of our digital forensics projects are conducted
 									using the necessary software and hardware, in compliance with applicable standards
 									and best practices.</p>
@@ -157,14 +158,14 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-5 col-md-12 col-sm-12">
-								<h2 class="style-h1 title-mr-l">Our digital forensics <span>report identifies:</span></h2>
+								<h2 class="style-h1 title-mr-l wow fadeInUp">Our digital forensics <span>report identifies:</span></h2>
 							</div>
 							<div class="col-lg-7 col-md-12 col-sm-12">
 								<div class="row pt-md-2 mb-md-5 mb-xl-0 mb-sm-0 features-list">
-									<div class="col-sm-6 custom-flex">
+									<div class="col-sm-6 custom-flex wow fadeInUp">
 										<div class="features-item custom-mg-6 features-dark-blue m-sm-0 img-top align-end"><img src="images/cyber-security.svg"><span>Data about the threat actors behind the cyber-attack case</span></div>
 									</div>
-									<div class="col-sm-6 custom-flex">
+									<div class="col-sm-6 custom-flex wow fadeInUp">
 										<div class="features-item features-dark-orange img-top m-sm-0 align-end"><img src="images/shield.svg"><span>Any tools, techniques, and procedures used by the adversaries throughout the incident</span></div>
 									</div>
 
@@ -175,10 +176,10 @@
 					</div>
 					<div class="container">
 						<div class="row features-list">
-							<div class="col-sm-6 d-flex custom-flex justify-content-end">
+							<div class="col-sm-6 d-flex custom-flex justify-content-end wow fadeInUp">
 								<div class="features-item features-red img-top"><img src="images/fingerprint.svg"><span>Scope of impact, including digital losses incurred</span></div>
 							</div>
-							<div class="col-sm-6 d-flex custom-flex justify-content-center ">
+							<div class="col-sm-6 d-flex custom-flex justify-content-center wow fadeInUp">
 								<div class="features-item ml-lg-5 m-sm-0 features-light-blue img-top"><img src="images/data-encryption.svg"><span>Date, time, and progress of the threat actors' breach</span></div>
 							</div>
 						</div>
@@ -190,7 +191,7 @@
 			<footer class="footer">
 				<section>
 					<div class="container invert">
-						<div class="row subscribe-section custom-border">
+						<div class="row subscribe-section custom-border wow flipInX">
 							<div class="col-lg-5 col-md-12 col-xs-12 subscribe-text">
 								<h3 class="style-h3">Newsletter <span>Sign Up</span></h3>
 								<p>Spessial offers from us to your inbox weekly.</p>
@@ -208,7 +209,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="row footer-section-navigation custom-border">
+						<div class="row footer-section-navigation custom-border wow flipInX">
 							<div class="col-xs-12 col-lg-4">
 								<img class="footer-logo" src="images/footer-logo.svg">
 								<ul class="custom-info">
@@ -313,7 +314,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row wow flipInX">
 							<div class="col-xs-12 col-lg-12 copyright"><p>© Copyright 2021 - PRODAFT All rights reserved.</p></div>
 						</div>
 					</div>
@@ -327,5 +328,7 @@
 		<script src="js/script.js"></script>
 		<script src="js/vendor/slick/slick.min.js"></script>
 		<script defer src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="js/vendor/wow/wow.min.js"></script>
+		<script> new WOW().init(); </script>
 	</body>
 </html>

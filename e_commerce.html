@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/plugins.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 	</head>
@@ -21,7 +23,7 @@
 		<!-- Page Wrap -->
 		<div class="page-wrap home_v2">
 			<!-- Page Header-->
-			<header class="section page-header main-menu-absolute">
+			<header class="section page-header main-menu-absolute wow flipInX">
 				<!-- Superfish menu -->
 				<div class="main-menu-wrap">
 					<nav class="navbar navbar-expand-md navbar-dark">
@@ -117,7 +119,7 @@
 			</header>
 			<main class="page-main">
 				<section class="section section-lg invert spacer-mobile" style="background-image: url(images/bg-first-section-e-commerce.jpg)">
-					<div class="container-sm-first-sec">
+					<div class="container-sm-first-sec wow flipInX">
 						<div class="row">
 							<div class="col-md-8 col-sm-8">
 								<h1 class="style-h1">E-Commerce</h1>
@@ -138,15 +140,15 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h2 class="style-h1 title-mr-l mb-sm-5"><span>Money is one of the main motives of cyber attackers, </span>
+								<h2 class="style-h1 title-mr-l mb-sm-5 wow fadeInUp"><span>Money is one of the main motives of cyber attackers, </span>
 									and many recent news shows that this poses a worldwide danger.</h2>
 							</div>
 							<div class="col-lg-6 col-md-12 col-sm-12">
-								<h3 class="custom-line">conclusions</h3>
-								<p>So, it is easy to say that all e-commerce sites are in danger.
+								<h3 class="custom-line wow fadeInUp">conclusions</h3>
+								<p class="wow fadeInUp">So, it is easy to say that all e-commerce sites are in danger.
 									Many e-commerce sites are only focused on sales and ignore security aspects of their business.
 									As a result they are easily targeted by attackers and lose creditability, customer and money.</p>
-								<p>E-commerce sites must constantly be ready against any attacks with secure code developments and regular penetration tests.
+								<p class="wow fadeInUp">E-commerce sites must constantly be ready against any attacks with secure code developments and regular penetration tests.
 									Thanks to its cyber intelligence competence, PRODAFT team supports you to take precautions against many threats by
 									testing most recent methods used by attackers and fraudsters.</p>
 							</div>
@@ -156,7 +158,7 @@
 				<section class="section section-sm pt-xs-0 pt-custom-sm pb-custom-sm">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp">
 								<h2 class="style-h1 title-mr-l">PRODAFT <span>E-Commerce</span> Solutions</h2>
 								<p class="title-mr-l mb-sm-5">PRODAFT supports your e-commerce business with a team of experts against any potential attacks. Here you can find some of the services we can provide.</p>
 							</div>
@@ -164,14 +166,14 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
-											<div class="features-item features-orange"><img src="images/app-development.svg"><span>Code Audit</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/hacker.svg"><span>Penetration Testing</span></div>
+											<div class="features-item features-orange wow fadeInUp"><img src="images/app-development.svg"><span>Code Audit</span></div>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-12">
 										<div class="features-list">
-											<div class="features-item features-blue"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
-											<div class="features-item features-orange"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
+											<div class="features-item features-blue wow fadeInUp"><img src="images/shield.svg"><span>Cyber Attack Drills</span></div>
+											<div class="features-item features-orange wow fadeInUp"><img src="images/cyber-security.svg"><span>Security Trainings</span></div>
 										</div>
 									</div>
 								</div>
@@ -185,7 +187,7 @@
 			<footer class="footer">
 				<section>
 					<div class="container invert">
-						<div class="row subscribe-section custom-border">
+						<div class="row subscribe-section custom-border wow flipInX">
 							<div class="col-lg-5 col-md-12 col-xs-12 subscribe-text">
 								<h3 class="style-h3">Newsletter <span>Sign Up</span></h3>
 								<p>Spessial offers from us to your inbox weekly.</p>
@@ -203,7 +205,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="row footer-section-navigation custom-border">
+						<div class="row footer-section-navigation custom-border wow flipInX">
 							<div class="col-xs-12 col-lg-4">
 								<img class="footer-logo" src="images/footer-logo.svg">
 								<ul class="custom-info">
@@ -308,7 +310,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row wow flipInX">
 							<div class="col-xs-12 col-lg-12 copyright"><p>© Copyright 2021 - PRODAFT All rights reserved.</p></div>
 						</div>
 					</div>
@@ -322,5 +324,7 @@
 		<script src="js/script.js"></script>
 		<script src="js/vendor/slick/slick.min.js"></script>
 		<script defer src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="js/vendor/wow/wow.min.js"></script>
+		<script> new WOW().init(); </script>
 	</body>
 </html>
