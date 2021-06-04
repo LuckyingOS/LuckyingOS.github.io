@@ -26,6 +26,7 @@ $(document).ready(function(){
 			setTimeout(function() {
 				$('.main-menu-absolute').removeClass('active');
 				$('.main-menu-absolute').removeClass('fixed');
+				$('.dropdown').removeClass('active');
 				$('body').removeClass('overflow-menu');
 				$('body').addClass('body');
 			}, 500)
