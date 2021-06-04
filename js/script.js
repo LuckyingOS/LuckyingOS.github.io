@@ -22,12 +22,17 @@ $(document).ready(function(){
 	});
 
 	$('.navbar-toggler').on("click", function () {
-		if ($( ".main-menu-wrap" ).hasClass('active')) {
+		if ($( ".main-menu-absolute" ).hasClass('active')) {
 			setTimeout(function() {
-				$('.main-menu-wrap').removeClass('active');
+				$('.main-menu-absolute').removeClass('active');
+				$('.main-menu-absolute').removeClass('fixed');
+				$('body').removeClass('overflow-menu');
+				$('body').addClass('body');
 			}, 500)
 		} else {
-			$('.main-menu-wrap').addClass('active');
+			$('.main-menu-absolute').addClass('active');
+			$('.main-menu-absolute').addClass('fixed');
+			$('body').addClass('overflow-menu');
 		}
 	});
 });

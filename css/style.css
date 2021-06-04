@@ -315,9 +315,19 @@ html p a:hover {
 }
 
 .page-header.main-menu-absolute {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   width: 100%;
+}
+.page-header.main-menu-absolute.fixed {
+  position: fixed;
+}
+@media (max-width: 767px) {
+  .page-header.main-menu-absolute.active .main-menu-wrap {
+    overflow: scroll;
+    height: 100vh;
+    background: #3F536D;
+  }
 }
 .page-header .navbar-brand {
   margin-right: 70px;
@@ -367,8 +377,8 @@ html p a:hover {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 @media (max-width: 450px) {
@@ -531,6 +541,10 @@ html p a:hover {
     margin-top: 0;
   }
 }
+.overflow-menu {
+  overflow: hidden;
+}
+
 footer {
   background-color: #3F536D;
 }
