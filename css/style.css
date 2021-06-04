@@ -494,6 +494,8 @@ html p a:hover {
 }
 @media (max-width: 767px) {
   .page-header .main-menu-wrap.active {
+    overflow: scroll;
+    height: 100vh;
     background: #3F536D;
   }
 }
