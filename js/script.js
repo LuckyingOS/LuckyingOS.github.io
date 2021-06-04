@@ -35,5 +35,15 @@ $(document).ready(function(){
 			$('body').addClass('overflow-menu');
 		}
 	});
+	$('.dropdown').on("click", function () {
+		if ($('.dropdown').hasClass('active')) {
+			$('.dropdown').removeClass('active');
+			setTimeout(function() {
+				$(this).addClass('active');
+			},1)
+			$(this).addClass('active');
+		} else {
+			$(this).addClass('active');
+		}
+	});
 });
-

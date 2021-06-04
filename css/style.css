@@ -402,10 +402,17 @@ html p a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.page-header .navbar .dropdown:hover .dropdown-menu {
+.page-header .navbar .dropdown.active .dropdown-menu {
   display: block;
   padding: 0;
   border-radius: 0;
+}
+@media (min-width: 450px) {
+  .page-header .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+  }
 }
 .page-header .navbar-nav .nav-link,
 .page-header .contact-us {

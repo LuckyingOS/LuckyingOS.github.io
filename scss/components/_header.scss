@@ -87,11 +87,17 @@
 			display: block;
 			transition: all .3s;
 		}
-
-		.dropdown:hover .dropdown-menu {
+		.dropdown.active .dropdown-menu {
 			display: block;
 			padding: 0;
 			border-radius: 0;
+		}
+		@media ( min-width: 450px ) {
+			.dropdown:hover .dropdown-menu {
+				display: block;
+				padding: 0;
+				border-radius: 0;
+			}
 		}
 	}
 	.navbar-nav .nav-link,
