@@ -2,7 +2,7 @@
 
 .page-header{
 	&.main-menu-absolute{
-		position: absolute;
+		position: fixed;
 		z-index: 1;
 		width: 100%;
 	}
@@ -168,6 +168,8 @@
 		padding-top: 18px;
 		&.active{
 			@media (max-width: 767px) {
+				overflow: scroll;
+				height: 100vh;
 				background: $grey-blue;
 			}
 		}

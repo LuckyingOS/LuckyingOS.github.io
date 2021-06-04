@@ -315,7 +315,7 @@ html p a:hover {
 }
 
 .page-header.main-menu-absolute {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
 }
