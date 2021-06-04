@@ -320,3 +320,8 @@
     }
 }
 }
+@media (max-width: 576px) {
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
