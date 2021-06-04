@@ -53,9 +53,17 @@
 			position: relative;
 			display: inline-block;
 		}
-		.dropdown-menu a:hover {
-			background-color: $orange-base;
-			color: $white;
+
+
+		@media ( max-width: 768px ) {
+			.dropdown-menu a:hover {
+				background-color: $orange-base;
+				color: $white;
+			}
+			.dropdown-item:hover, .dropdown-item:focus {
+				background-color: $orange-base;
+				color: $white;
+			}
 		}
 
 		.dropdown-menu {
@@ -225,9 +233,10 @@
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 .overflow-menu {
-	position: relative;
-	height: 100%;
-	overflow: hidden;
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+		position: fixed;
 }
 @media ( min-width: 450px ) and ( max-width: 768px ) {
 	.contact-information div{
