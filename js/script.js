@@ -37,9 +37,16 @@ $(document).ready(function(){
 		}
 	});
 	$('.dropdown').on("click", function () {
-		if ($('.dropdown').hasClass('active')) {
+		if (!$(this).hasClass('active')) {
 			$('.dropdown').removeClass('active');
-		} 
-		$(this).addClass('active');
+			$(this).addClass('active');
+		}
+		else  {
+			$('.dropdown').removeClass('active');
+		}
+		/*if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		}
+		*/
 	});
 });
