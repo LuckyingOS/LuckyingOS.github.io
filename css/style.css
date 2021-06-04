@@ -543,6 +543,8 @@ html p a:hover {
 }
 .overflow-menu {
   overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 footer {
