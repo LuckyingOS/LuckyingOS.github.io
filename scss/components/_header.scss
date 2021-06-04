@@ -45,7 +45,7 @@
 			content: url(../images/arrow.svg);
 			border: none;
 			position: absolute;
-			@media (max-width: 450px) {
+			@media (max-width: 768px) {
 				right: 20px;
 			}
 		}
@@ -91,8 +91,13 @@
 			display: block;
 			padding: 0;
 			border-radius: 0;
+			position: relative;
+			background-color: transparent;
+			box-shadow: none;
+			border: none;
 		}
-		@media ( min-width: 450px ) {
+
+		@media ( min-width: 768px ) {
 			.dropdown:hover .dropdown-menu {
 				display: block;
 				padding: 0;
@@ -116,7 +121,7 @@
 			@media ( min-width: 450px ) and ( max-width: 1024px ) {
 				margin-top: 20px;
 			}
-			@media (max-width: 450px) {
+			@media (max-width: 768px) {
 				padding-top: 50px;
 				li{
 					border-bottom: 1px solid rgba(232,232,232,0.2);
@@ -138,7 +143,7 @@
 
 				}
 			}
-			@media (min-width: 450px) {
+			@media (min-width: 768px) {
 				& > li:not(:last-child){
 					margin-right: 24px;
 				}
@@ -194,7 +199,7 @@
 	}
 }
 .page-header .navbar .dropdown:hover .dropdown-menu li {
-	@media (max-width: 450px) {
+	@media (max-width: 768px) {
 		padding-bottom: 0;
 		border: none;
 		a {
@@ -202,7 +207,7 @@
 		}
 	}
 	&:before {
-		@media (max-width: 450px) {
+		@media (max-width: 768px) {
 			display: none;
 			padding-bottom: 0;
 			border: none;
@@ -220,4 +225,14 @@
 	position: relative;
 	height: 100%;
 	overflow: hidden;
+}
+@media ( min-width: 450px ) and ( max-width: 768px ) {
+	.contact-information div{
+		&:first-child {
+			margin-right: 10px;
+		}
+		&:last-child {
+			margin-left: 10px;
+		}
+	}
 }
