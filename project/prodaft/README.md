@@ -1,1 +1,0 @@
-# luckyingos.github.io
